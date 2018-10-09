@@ -1,0 +1,91 @@
+//
+// BOD Control
+// Mobile First CSS Method
+// Created by Hiroko Y.
+// Last updated: 2018-04-06 10:47AM
+// --------------------------------------------------
+#Losing-weight {
+  @include page-default;
+
+  .mobile-bg{
+    background: url(//img1.beachbodyimages.com/beachbody/image/upload/v1532726547/ola/quickwin2/mobile/Woman-Stretch.jpg) top center/cover #f6f4f2 no-repeat;
+    //padding-bottom: 107.14%;
+    padding-bottom: 90.14%;
+    max-height: 350px;
+  }
+  h2{
+    @include element-title;
+    font-size: 30px;
+    line-height: 35px;
+    margin-top: 54px;
+  }
+  .description{
+    @include element-description;
+  }
+}
+
+/* mobile (>= 667px)
+-------------------------------------------------- */
+@media (min-width: 667px) {
+  #Losing-weight{
+    .hidden-667{
+      display: none;
+    }
+    h2{
+      margin-top: 80px;
+    }
+  }
+}
+
+/* tablets (>= 768px)
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  #Losing-weight {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1170px; // fit the size as a grid container
+    display: block; 
+    
+    background: url(//img1.beachbodyimages.com/beachbody/image/upload/v1532726529/ola/quickwin2/desktop/Woman-Stretch.jpg) top center/cover #f6f4f2 no-repeat;
+    background-size: cover;
+    padding-bottom: 22.25%;
+    //height: 603px;
+    //max-height: none;   
+
+    .mobile-bg{
+      background: none;
+      padding-bottom: 0;
+    } 
+  }
+}
+
+/* Desktop (>= 992px)
+-------------------------------------------------- */
+@media (min-width: 992px) {
+  #Losing-weight{
+    // .desktop-bg{
+    //   background: url(../images/Desktop/Woman-Stretch.png) top center/cover #f6f4f2 no-repeat;
+    //   height: 650px;
+    //   padding-bottom: 0;
+    // }
+    .mobile-bg{
+      background: none;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      @include element-title-desktop;
+      margin-top: 130px;
+    }
+    .description{
+      @include element-description-desktop;
+    }
+    .col-md-6{
+      padding-left: 70px;
+    }
+  }
+}
+
+
+
+

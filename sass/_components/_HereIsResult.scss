@@ -1,0 +1,37 @@
+//
+// BOD Control
+// Mobile First CSS Method
+// Created by Hiroko Y.
+// Last updated: 2018-07-23 02:30PM
+// --------------------------------------------------
+#here-is-result{
+    @include page-default;
+    
+    h2{
+        @include hero-title;
+    }
+    .description{
+        @include hero-description;
+    }
+    .description-result{
+        text-align: left;
+        padding: 15px 0;
+    }
+}
+
+
+/* Desktop (>= 1200px)
+-------------------------------------------------- */
+@media (min-width: 1200px) {
+    #here-is-result{
+        h2{
+            font-size: 46px;
+            line-height: 48px;
+        }
+        .description-result{
+            text-align: center;
+            font-size: 1.25em;
+            line-height: 1.25;            
+        }
+    }
+}          

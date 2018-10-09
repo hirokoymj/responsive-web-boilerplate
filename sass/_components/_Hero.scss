@@ -1,0 +1,145 @@
+//
+// BOD Control
+// Mobile First CSS Method
+// Created by Hiroko Y.
+// Last updated: 2018-07-31 12:55PM
+// --------------------------------------------------
+#contentBB{
+  display: none !important;
+}
+.usabilla_live_button_container{
+  display: none !important;
+}
+.custom-left-padding{
+  padding-left: 20px;
+}
+
+#Hero {
+  @include page-default;
+  background: url(//img1.beachbodyimages.com/beachbody/image/upload/v1532726547/ola/quickwin2/mobile/Woman.jpg) top center/cover #c3d0ec no-repeat;
+  padding-bottom: 70.88%;
+  max-height: 529px;
+  /* FROM Country heat*/
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: block;  
+
+  h1.hero-text{
+    @include hero-title;
+    margin: 20px 0;
+  }
+
+  .hero-description{
+    @include hero-description;
+    margin-bottom: 20px;
+  }
+  .cta{
+    @include page-cta-button;
+    margin-top: 228px;
+    .button{
+      width: 90%;
+    }
+  }
+  .bb-logo{
+    width: 190px;
+    margin-top: 25px;
+  } 
+  .zero-padding{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  sup {
+    @include bb-trademark;
+  }  
+}
+
+/* mobile (>= 667px)
+-------------------------------------------------- */
+@media (min-width: 667px) {
+  #Hero{
+    background: url(//img1.beachbodyimages.com/beachbody/image/upload/v1532726547/ola/quickwin2/mobile/Woman.jpg) 0px center/cover #c3d0ec no-repeat;
+    max-height: 525px;
+  }
+}
+
+/* tablets (>= 768px)
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  #Hero{
+    background-image: url(//img1.beachbodyimages.com/beachbody/image/upload/v1532726529/ola/quickwin2/desktop/Woman.jpg);
+    background-size: cover;
+    padding-bottom: 6%;
+    //height: 650px;
+    max-height: none;    
+
+    h1.hero-text {
+      @include hero-title-desktop;
+      font-size: 46px;
+      line-height: 48px;
+      margin-top: 30px;
+    }
+    .hero-description{
+      @include hero-description-desktop;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    .cta{
+      @include page-cta-button;
+      margin-top: 0;
+      margin-bottom: 35px;
+      text-align: left;
+      .button{
+        width: 65%;
+      }
+    }
+    .bb-logo{
+      width: 249px;
+      margin-top: 40px;
+    }
+  }
+  .custom-left-padding{
+    padding-left: 30px;
+  }     
+}
+
+
+/* Desktop (>= 992px)
+-------------------------------------------------- */
+@media (min-width: 992px) {
+  #Hero{
+    h1.hero-text {
+      @include hero-title-desktop;
+    }
+    .hero-description{
+      @include hero-description-desktop;
+    }
+    .cta{
+      .button{
+        width: 45%;
+      }
+    }
+    // .bb-logo{
+    //   width: 249px;
+    //   margin-top: 80px;
+    // }
+  }
+  .custom-left-padding{
+    padding-left: 50px;
+  }    
+}
+
+/* Desktop (>= 1200px)
+-------------------------------------------------- */
+@media (min-width: 1200px){
+  #Hero{
+    height: 650px;
+    padding-bottom: 0;
+  }
+  .custom-left-padding{
+    padding-left: 80px;
+  }   
+}
+
+
+

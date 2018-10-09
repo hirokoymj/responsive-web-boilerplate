@@ -1,0 +1,122 @@
+//
+// BOD Control
+// Mobile First CSS Method
+// Created by Hiroko Y.
+// Last updated: 2018-04-06 10:47AM 
+// --------------------------------------------------
+#How-you-look {
+  @include page-default;
+  
+  h2{
+    @include element-title;
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .description{
+    p{
+      @include element-description;
+      margin-top: 0;
+      margin-bottom:15px;
+    }
+  }
+  .cta{
+    @include page-cta-button;
+    .button{
+      width: 90%;
+    }
+  }
+  .see-you-on{
+    font-family: 'Caveat', cursive;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 75px;
+  }
+}
+
+
+
+/* mobile (>= 667px)
+-------------------------------------------------- */
+@media (min-width: 667px) {
+  #How-you-look{
+    .cta{
+      text-align: left;
+      margin-top: 0;
+      .button{
+        width: 50%;
+      }
+    }
+  }
+}
+
+/* Desktop (>= 768px)
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  #How-you-look{
+    h2 {
+      margin-top: 40px;
+    }
+    .cta{
+      .button{
+        width: 70%;
+      }
+    }
+    .section-hero-img{
+      max-width: 89%;
+      margin: 0 auto;
+    }
+    .see-you-on{
+      margin-top: 20px;
+      text-align: left;
+    }    
+    .custom-padding{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+
+/* Desktop (>= 992px)
+-------------------------------------------------- */
+@media (min-width: 992px) {
+  #How-you-look{
+    h2 {
+      @include element-title-desktop;
+      margin-top: 80px;
+      font-size: 45px;
+      line-height: 50px;
+    }
+    .description{
+      @include element-description-desktop;
+      margin-top: 40px;
+    }
+    .cta{
+      .button{
+        width: 55%;
+      }
+    }
+    .section-hero-img{
+      //max-width: 64%;
+    } 
+    .see-you-on{
+      margin-top: 60px;
+    }     
+  }
+}
+
+/* Desktop (>= 1200px)
+-------------------------------------------------- */
+@media (min-width: 1200px){
+
+  #How-you-look{
+    h2 {
+      font-size: 48px;
+      line-height: 52px;
+    }
+  }  
+}
+
+
+

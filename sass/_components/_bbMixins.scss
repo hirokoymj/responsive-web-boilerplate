@@ -1,0 +1,112 @@
+$orange: #ff5700;
+$primary_blue: #0064af;
+$text-black: #3a3a3a;
+$text-white: #fff;
+$bg-light-gray: #f6f6f8;
+$bg-black: #111111;
+$bg-results: #e8eaee;
+$light-blue: #d9e2ea;
+$light-blue-secondary: #37b1e2;
+
+@mixin page-default{
+  font-size: 16px;
+  color: $text-black;
+  font-family: "proxima-nova", Arial, sans-serif !important;
+  line-height: 18px;
+}
+@mixin page-link{
+  text-decoration: none;
+  outline: none;
+  font-family: "proxima-nova", Arial, sans-serif !important;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+@mixin page-cta-button{
+  color: #FFF;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  .button {
+    font-family: "proxima-nova", Arial, sans-serif !important;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    background: $orange;
+    display: inline-block;
+    padding: 15px 0;
+    width: 100%;
+    box-shadow: 0 5px 17px rgba(0, 0, 0, 0.25);
+  }
+}
+@mixin hero-title{
+  font-family: "proxima-nova", Arial, sans-serif !important;
+  color: $primary_blue;
+  font-size: 36px;
+  line-height: 38px;
+  font-weight: normal;
+  text-align: left;
+}
+@mixin hero-title-desktop{
+  font-size: 56px;
+  line-height: 58px;
+  margin-top: 60px;
+}
+@mixin hero-description{
+  font-family: "proxima-nova", Arial, sans-serif !important;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+  color: $text-black;
+}
+@mixin hero-description-desktop{
+  font-size: 22px;
+  line-height: 27px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+@mixin element-title{
+  color: $primary_blue;
+  font-family: "proxima-nova", Arial, sans-serif !important;
+  font-size: 36px;
+  line-height: 37px;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 40px; //Quick win 
+}
+@mixin element-title-desktop{
+  font-size: 48px;
+  line-height: 52px;
+}
+@mixin element-description{
+  font-family: "proxima-nova", Arial, sans-serif !important;
+  font-size: 17px;  //Quick win 
+  line-height: 23px;  //Quick win
+  text-align: left;
+  color: $text-black;
+  margin-top: 30px; // Quick win 
+  margin-bottom: 40px; // Quick win
+}
+@mixin element-description-desktop{
+  font-size: 18px; 
+  line-height: 24px;
+}  
+
+@mixin bb-trademark{
+  vertical-align: baseline !important;
+  position: relative !important;
+  top: -0.5em !important;
+  font-size: 56% !important;
+}
+
+p{
+  font: 18px/24px "proxima-nova", Arial, sans-serif;
+}  
+* html, h1, h2, h3, h4, h5, p, ul, ol, li, a, blockquote {
+  font-family: "proxima-nova", Arial, sans-serif;
+}

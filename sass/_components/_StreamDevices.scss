@@ -1,0 +1,97 @@
+//
+// BOD Control
+// Mobile First CSS Method
+// Created by Hiroko Y.
+// Last updated: 2018-04-06 10:47AM
+// --------------------------------------------------
+#StreamDevices{
+  @include page-default;
+  color: #fff;
+  background-color: #404040;
+
+  h2{
+    @include element-title;
+    color: #fff;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .device{
+    color: $light-blue-secondary;
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .device-detail{
+    color: #fff;
+    text-align: left;
+  }
+  .device-row{
+    border-bottom: 1px solid $bg-light-gray;
+    padding: 25px 0px;
+  }
+  .device-img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  .device-table{
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  .device-cell{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .zero-pading-left{
+    padding-left: 0;
+  }
+  .zero-padding-right{
+    padding-right: 0;
+  }
+}
+
+/* Desktop (>= 768px)
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  #StreamDevices {
+    .device {
+      text-align: center;
+    }
+    .device-detail {
+      text-align: center;
+    }
+    .device-name-row{
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .device-tablet{
+      width: 45% !important;
+    }
+    .device-img{
+      width: 60%;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;        
+    }    
+  }
+}
+
+
+/* Desktop (>= 992px)
+-------------------------------------------------- */
+@media (min-width: 992px) {
+  #StreamDevices{
+    h2 {
+      @include element-title-desktop; 
+      font-size: 44px;
+      line-height: 32px;
+      text-align: center;
+      margin-top: 80px;
+    }
+  }
+}
+

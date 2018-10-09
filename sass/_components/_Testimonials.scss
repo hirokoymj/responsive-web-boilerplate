@@ -1,0 +1,93 @@
+//
+// BOD Control
+// Mobile First CSS Method
+// Created by Hiroko Y.
+// Last updated: 2018-04-06 10:47AM asdkfadslkkjh
+// --------------------------------------------------
+#Testimonials {
+  @include page-default;
+  background: #f6f6f8;
+
+  h2{
+    @include element-title;
+  }
+  .description{
+    @include element-description;
+    font-style: italic;
+  }
+  .author{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 21px;
+    img{
+      float: left;
+      margin-right: 20px;
+    }
+    strong{
+      font-weight: bold;
+      display: block;
+      font-style: normal !important;
+    }
+    .author-info{
+      font-size: 17px;
+      line-height: 23px;
+      font-style: italic;
+      text-align: left;
+    }
+  }
+  .quotemark {
+    width: 25px;
+    height: auto;
+    display: inline;
+    float: left;
+    margin: -5px -35px 0 -11px;
+  }  
+}
+
+/* Desktop (>= 768px)
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  #Testimonials{
+    .custom-padding{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    h2{
+      text-align: center;
+    } 
+  }
+}
+
+
+/* Desktop (>= 992px)
+-------------------------------------------------- */
+@media (min-width: 992px) {
+  #Testimonials{
+    padding-bottom: 80px;
+    h2 {
+      @include element-title-desktop;   
+      margin-top: 80px;
+      margin-bottom: 25px;
+    }
+    .description{
+      @include element-description-desktop;
+      display: table;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    .author{
+      padding-left: 18%;
+    }
+    .quotemark {
+      width: 35px;
+      margin: -5px -35px 0 -15px;
+    }      
+  }
+}
+
+/* Desktop (>= 1200px)
+-------------------------------------------------- */
+@media (min-width: 1200px){}
+
+
+
